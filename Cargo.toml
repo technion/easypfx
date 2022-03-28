@@ -8,3 +8,4 @@ edition = "2018"
 [dependencies]
 openssl = { version = "0.10", features = ["vendored"] }
 rpassword = "6.0"
+anyhow = "1.0.56"
