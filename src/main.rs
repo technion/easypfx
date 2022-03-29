@@ -69,8 +69,8 @@ fn main() {
     let cert = x509.cert;
     let pemcert = &cert.to_pem().unwrap();
     
-    println!("{}", std::str::from_utf8(&pemcert).unwrap() );
+    println!("Certificate:\n{}", std::str::from_utf8(&pemcert).unwrap() );
     let key = x509.pkey;
     let pemkey = &key.private_key_to_pem_pkcs8().unwrap();
-    println!("{}", std::str::from_utf8(&pemkey).unwrap() );
+    println!("Private key:\n{}", std::str::from_utf8(&pemkey).unwrap() );
 }
